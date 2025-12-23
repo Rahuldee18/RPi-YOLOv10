@@ -63,11 +63,17 @@ Observe the output from the application.
 ```bash
 [3] 37984
 pi@raspberrypi:~/RPi-YOLOv10$ INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-Payload being sent:  "Label:", 0.0, person, ",Score:", 0.8530769348144531 ", Image coordinates:", (np.float32(0.19415493), np.float32(0.6156122), np.float32(0.62505543), np.float32(0.9993543))
+Sending JSON: {"timestamp": 1766459874.8768485, "objects": {"class_id": 0, "label": "person", "confidence": 0.793, "bbox": [0.09138107299804688, 0.07930111885070801, 0.6551454067230225, 0.9981493949890137]}}
 Inference published to MQTT topic
-Payload being sent:  "Label:", 0.0, person, ",Score:", 0.8997121453285217 ", Image coordinates:", (np.float32(0.20572251), np.float32(0.47419235), np.float32(0.63347673), np.float32(0.99792933))
-Inference published to MQTT topic
+Logged to DB: person
 MQTT client disconnected and loop stopped.
+================================================================================
+ID   | Timestamp            | Label      | Conf   | Coordinates (x1, y1, x2, y2)
+--------------------------------------------------------------------------------
+1    | 2025-12-23 03:17:54  | person     | 0.79   | (0.09138107299804688, 0.07930111885070801,
+     |                      |            |        |  0.6551454067230225, 0.9981493949890137)
+================================================================================
+
 
 
 ```
