@@ -4,7 +4,7 @@ Fundamental ideas on AI model output tensor, LiteRT runtime, MQTT and Docker are
 Doulos course on [Edge AI for Embedded Developers](https://www.doulos.com/training/ai-and-deep-learning/deep-learning/essential-edge-ai-for-embedded-developers/)
 
 **Step 1:**
-Clone the repository on Arduino UNO Q
+Clone the repository on either Raspberry Pi 3, 4 or 5
 
 ```bash
 $git clone https://github.com/Rahuldee18//RPi-YOLOv10
