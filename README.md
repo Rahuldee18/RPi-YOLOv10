@@ -29,7 +29,7 @@ $ sudo usermod -aG docker $USER
 Create Docker image using build.
 
 - The image is built locally on Raspberry Pi -3B and takes about 3-4 minutes.
-- Change to the camera-project directory and issue the build command.
+- Change to the RPi-YOLOv10 directory and issue the build command.
 
 ```bash
 $sudo docker build -t yolov10-mqtt .
@@ -81,5 +81,6 @@ ID   | Timestamp            | Label      | Conf   | Coordinates (x1, y1, x2, y2)
 **Step 7:**
 
 - Change the MQTT topic name in the application code (object-detection-yolov10.py) and subscribe to the topic on another computer to view the output from the object detection model.
-- Also, try updating the code to give continuous inference.  Right now, it is setup to provide only one inference at start. 
+- Try updating the code to give continuous inference.  Right now, it is setup to provide only one inference at start. 
+- Use the SQLite database content to create a dashboard using Streamlit
 
